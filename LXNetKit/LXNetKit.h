@@ -12,6 +12,7 @@ typedef void(^FieldBlock)(NSURLResponse *response,NSError *connectionError);
 
 @interface LXNetKit : NSObject
 
++ (void)sendAsynchronousSessionUrl:(NSString *)urlString HTTPMethod:(NSString *)httpMethod param:(NSDictionary *)param complate:(ComplateBlock)complateBlock field:(FieldBlock)fieldBlock;
 + (void)sendAsynchronousUrlString:(NSString*)urlString HTTPMethod:(NSString *)httpMethod param:(NSDictionary*)param complate:(ComplateBlock)complateBlock field:(FieldBlock)fieldBlock;
 
 @end
